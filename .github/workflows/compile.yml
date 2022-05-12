@@ -94,7 +94,7 @@ jobs:
         
     - name: 启用在线更新
       continue-on-error: true
-      if: env.REGULAR_UPDATE == 'true' && env.REPO_TOKEN
+    #  if: env.REGULAR_UPDATE == 'true' && env.REPO_TOKEN
       run: |
         cd openwrt
         source $BUILD_PATH/upgrade.sh && Diy_Part2
